@@ -64,10 +64,10 @@ A Solana Components Repo will be released in the near future to house a common c
 ### Structure
 
 The scaffold project structure may vary based on the front end framework being utilized. The below is an example structure for the Next js Scaffold.
- 
+
 ```
 ├── public : publically hosted files
-├── src : primary code folders and files 
+├── src : primary code folders and files
 │   ├── components : should house anything considered a resuable UI component
 │   ├── contexts` : any context considered reusable and useuful to many compoennts that can be passed down through a component tree
 │   ├── hooks` : any functions that let you 'hook' into react state or lifecycle features from function components
@@ -79,6 +79,21 @@ The scaffold project structure may vary based on the front end framework being u
 │   ├── views` : contains the actual views of the project that include the main content and components within
 style, package, configuration, and other project files
 
+```
+
+### Creating Your Game
+
+In order to change or create a new game, edit the `index.tsx` file in `src/views/home/index.tsx`:
+
+```tsx
+// 👉 THIS IS THE ONLY PART YOU EDIT FOR THE JAM 👈
+const GameSandbox: FC = () => {
+  return (
+    <div>
+      Your No-Code Jam Game
+    </div>
+  );
+};
 ```
 
 ## Deploy on Vercel
